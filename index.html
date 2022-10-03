@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Eventually by HTML5 UP</title>
+		<title>Ask the IT Guy</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -15,32 +15,37 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1>Eventually</h1>
-				<p>A simple template for telling the world when you'll launch<br />
-				your next big thing. Brought to you by <a href="http://html5up.net">HTML5 UP</a>.</p>
+				<h1>Ask The IT Guy</h1>
+				<p>It's simple, if you have a question about your phone, desktop, or smart device I'll help you for free!<br />
 			</header>
 
 		<!-- Signup Form -->
-			<form id="signup-form" method="post" action="#">
-				<input type="email" name="email" id="email" placeholder="Email Address" />
-				<input type="submit" value="Sign Up" />
+			<form id="signup-form" method="post" action="https://formsubmit.co/asktheitguyy@gmail.com">
+				<!--Honeypot-->
+				<input type="text" name="_honey" style="display: none;">
+				<!--Disable Captcha-->
+				<input type="hidden" name="_captcha" value="false">
+				<div class="fields">
+					<div class="field half">
+						<input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+					</div>
+					<div class="field">
+						<textarea name="message" id="message" rows="6" placeholder="No such thing as a stupid question." required="" ></textarea>
+					</div>
+				</div>
+				<input type="submit" value="Ask Away !" />
 			</form>
-
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="asktheitguy" data-color="#FFDD00" data-emoji=""  data-font="Arial" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; The IT Guy 2022</li>
 				</ul>
 			</footer>
 
 		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
